@@ -12,25 +12,35 @@ body {
     background-color: var(--tan);
     overflow: hidden;
     text-decoration: none;
+    justify-items: flex-start;
+    transition: 0.3s;
 }
 
 header { 
     align-items: center;
 }
 
-#logo {
+/* #logo {
     width: 100px;
     display: inline-block;
     margin: 15px;
     height: 150px;
     width: auto;
+} */
+
+.logo {
+    justify-self: center;
+    align-items: center;
+    float: left;
 }
+
 
 .search {
     display: flexbox;
     display: list-item;
     list-style: none;
     align-items: center;
+    content: space-evenly;
 }
 
 .topnav a {
@@ -59,6 +69,11 @@ header {
     justify-content: center;
     text-align: center;
 
+}
+
+.search ul li {
+    display: list-item;
+    list-style: square;
 }
 
 .items {
