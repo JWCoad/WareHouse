@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// //routes placeholder
+// routes placeholder
 // require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
