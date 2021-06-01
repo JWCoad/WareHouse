@@ -14,10 +14,15 @@ body {
     text-decoration: none;
     justify-items: flex-start;
     transition: 0.3s;
+    
 }
 
-header { 
+.header { 
     align-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: auto;
+    margin: auto;
 }
 
 /* #logo {
@@ -28,17 +33,18 @@ header {
     width: auto;
 } */
 
-.logo {
-    justify-self: center;
-    align-items: center;
-    float: left;
+.centered {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -170%);
 }
 
 
 .search {
     display: flexbox;
-    display: list-item;
-    list-style: none;
+    /* display: list-item;
+    list-style: none; */
     align-items: center;
     content: space-evenly;
 }
@@ -50,6 +56,7 @@ header {
     text-align: center;
     padding: 14px 12px;
     display: block;
+    margin: 0%;
 }
 
 .topnav a:hover {
@@ -58,7 +65,8 @@ header {
 }
 
 .container {
-    display: block;
+    display: flex;
+    display: list-item;
     margin: 60px auto;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -81,6 +89,9 @@ header {
     display: inline-flexbox;
 }
 
+form {
+    color: black;
+}
 .login {
     display: flexbox;
     height: 50%;
@@ -88,8 +99,14 @@ header {
     justify-content: center;
     display: list-item;
  
-    background-color: var(--cloud);
+    background-color: var(--offWhite);
     color: var(--tan);
+}
+
+#logo {
+    position: relative;
+    top: 20%;
+    left: 45%; 
 }
 
 #username,
