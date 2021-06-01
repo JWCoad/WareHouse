@@ -11,7 +11,7 @@
     
         <div class="topnav">
             <h4>Login Name</h4>
-            <header><a href="#"><img id="logo" src="./logo.png"></a></header>
+            <header><a href="#"><img class="logo" src="./logo.png"></a></header>
              <a href="#Delete">Delete</a>   
             <a href="#item">add item</a>
             <a href="#Update">Update</a>
@@ -22,9 +22,13 @@
 
         <div class="search container search">
             <form action="_self">
+                <fieldset>
                 <label class="search" for="key word">Search item</label>
-                <input type="text">
-                <label for="colour">choose a colour</label>
+                <input type="search">
+                <br>
+                <div class="search" >
+                    <label for="colour">Colour</label>
+                <input type="radio">
                 <select id="colors" name="colour">
                     <option value="Blue">Blue</option>
                     <option value="Green">Green</option>
@@ -32,8 +36,11 @@
                     <option value="Yellow">Yellow</option>
                     <option value="White">White</option>
                     <option value="Black">Black</option>
-                    <input type="checkbox">
-                    <label for="material">choose a material</label>
+                </div>
+                    <br>
+                    <div class="search">
+                    <input type="radio">
+                    <label for="material">Material</label>
                     <select id="materials" name="material">
                         <option value="wool">Wool</option>
                         <option value="silk">Silk</option>
@@ -41,34 +48,62 @@
                         <option value="cashmere">Cashmere</option>
                         <option value="polyester">Polyester</option>
                         <option value="Mixed"></option>
-                        <label for="colour">choose a </label>
-                        <select id="colors" name="colour">
+                    </div>
+                        <br>
+                        <div>
+                        <input type="radio">
+                        <label for="footwear">Footwear</label>
+                        <select id="foot" name="foot">
                             <option value="sneakers">sneakers</option>
                             <option value="sandles">Sandles</option>
                             <option value="heels">Heels</option>
                             <option value=""></option>
                             <option value=""></option>
                             <option value=""></option>
-                            <label for="colour">choose a colour</label>
-                            <select id="colors" name="colour">
+                            <br>
+                        </div>
+                            <input type="radio">
+                            <label for="active">Active Wear</label>
+                            <select id="active" name="active">
                                 <option value=""></option>
                                 <option value=""></option>
                                 <option value=""></option>
                                 <option value=""></option>
                                 <option value=""></option>
                                 <option value=""></option>
-                                <label for="colour">choose a colour</label>
-                                <select id="colors" name="colour">
+                                <br>
+                                <div>
+                                <input type="radio">
+                                <label for="swim">Swim Wear</label>
+                                <select id="swim" name="swim">
+                                    <option value="one"></option>
+                                    <option value="bikini"></option>
+                                    <option value="long"></option>
                                     <option value=""></option>
                                     <option value=""></option>
                                     <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <input type="submit">
+                                </div>
+                                    <br>
+                                    <div>
+                                    <input type="radio">
+                                    <label for="colour">Accessories</label>
+                                    <select id="colors" name="colour">
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    <input type="submit"></div>
+ 
                 </select>
+            </fieldset>
             </form>
 
+        </div>
+
+        <div class="container">
+            <h1>Results</h1>
         </div>
 
     </main>
