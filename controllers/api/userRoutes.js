@@ -43,4 +43,31 @@ router.post('/logout', (req, res) => {
   }
 });
 
+
+
+router.post('/', (req, res) => {
+
+  User.create({
+    name: req.body.name,
+    password: req.body.password
+  })
+
+    .then(userData => {
+      req.session.save(() => {
+        req.session.user_id = userData.id;
+        req.session.name = userData.name;
+        req.session.logged_in = true;
+
+        res.json(userData);
+      });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+
+
+
 module.exports = router;
