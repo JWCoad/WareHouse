@@ -15,7 +15,7 @@ Item.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
+    material: {
       type: DataTypes.STRING,
 
     color: {
