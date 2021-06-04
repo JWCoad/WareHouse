@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Item extends Model {}
+class Item extends Model { }
 
 Item.init(
   {
@@ -11,15 +11,25 @@ Item.init(
       primaryKey: true,
       autoIncrement: true,
     },
+
     name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id',
+      },
+    },
+
     material: {
       type: DataTypes.STRING,
-
+    },
     color: {
-       type: DataTypes.STRING,
+      type: DataTypes.STRING,
     },
 
     date_created: {
@@ -31,14 +41,6 @@ Item.init(
     price: {
       type: DataTypes.FLOAT,
       allowNull: false,
-    },
-
-    category_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: 'category',
-            key: 'id',
-          },    
     },
 
     user_id: {
