@@ -5,7 +5,7 @@
         "material": "Cotton",
         "color": "White",
         "date_created": "01/06/2021",
-        "price": "$19.99",
+        "price": "19.99",
         "user_id": "1"
     },
     {
@@ -14,7 +14,7 @@
         "material": "Silk",
         "color": "Brown",
         "date_created": "01/06/2021",
-        "price": "$99.99",
+        "price": "99.99",
         "user_id": "2"
     },
     {
@@ -23,7 +23,7 @@
         "material": "Denim",
         "color": "Blue",
         "date_created": "02/06/2021",
-        "price": "$59.99",
+        "price": "59.99",
         "user_id": "3"
     },
     {
@@ -32,7 +32,7 @@
         "material": "Leather",
         "color": "Black",
         "date_created": "02/06/2021",
-        "price": "$89.99",
+        "price": "89.99",
         "user_id": "4"
     },
     {
@@ -41,7 +41,7 @@
         "material": "Leather",
         "color": "Yellow",
         "date_created": "03/06/2021",
-        "price": "$119.99",
+        "price": "119.99",
         "user_id": "5"
     },
     {
@@ -50,7 +50,7 @@
         "material": "Leather",
         "color": "Yellow",
         "date_created": "03/06/2021",
-        "price": "$69.99",
+        "price": "69.99",
         "user_id": "6"
     },
     {
@@ -59,7 +59,7 @@
         "material": "Leather",
         "color": "Yellow",
         "date_created": "03/06/2021",
-        "price": "$69.99",
+        "price": "69.99",
         "user_id": "7"
     },
     {
@@ -69,7 +69,7 @@
         "material": "Wool",
         "color": "Black",
         "date_created": "03/06/2021",
-        "price": "$89.99",
+        "price": "89.99",
         "user_id": "8"
     },
     {
@@ -79,7 +79,7 @@
         "material": "Polyster",
         "color": "White",
         "date_created": "04/06/2021",
-        "price": "$129.99",
+        "price": "129.99",
         "user_id": "9"
     },
     {
@@ -89,7 +89,7 @@
         "material": "Denim",
         "color": "Blue",
         "date_created": "04/06/2021",
-        "price": "$99.99",
+        "price": "99.99",
         "user_id": "10"
     }
 ]
