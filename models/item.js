@@ -17,14 +17,6 @@ Item.init(
       allowNull: false,
     },
 
-    category_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'category',
-        key: 'id',
-      },
-    },
-
     material: {
       type: DataTypes.STRING,
     },
