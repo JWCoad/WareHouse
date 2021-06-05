@@ -31,7 +31,7 @@ Item.init(
     },
 
     price: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.DECIMAL,
       allowNull: false,
     },
 
