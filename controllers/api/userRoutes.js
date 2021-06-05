@@ -1,16 +1,14 @@
-//login calls
+const router = require('express').Router();
+const { User } = require('../../models');
 
-const router = require("express").Router();
-const { User } = require("../../models");
-
-router.post("/login", async (req, res) => {
+router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { name: req.body.name } });
 
     if (!userData) {
       res
         .status(400)
-        .json({ message: "Incorrect username or password, please try again" });
+        .json({ message: 'Incorrect username or password, please try again' });
       return;
     }
 
@@ -19,7 +17,7 @@ router.post("/login", async (req, res) => {
     if (!validPassword) {
       res
         .status(400)
-        .json({ message: "Incorrect username or password, please try again" });
+        .json({ message: 'Incorrect username or password, please try again' });
       return;
     }
 
@@ -27,14 +25,15 @@ router.post("/login", async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
 
-      res.json({ user: userData, message: "You are now logged in!" });
+      res.json({ user: userData, message: 'You are now logged in!' });
     });
+
   } catch (err) {
     res.status(400).json(err);
   }
 });
 
-router.post("/logout", (req, res) => {
+router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
@@ -44,14 +43,17 @@ router.post("/logout", (req, res) => {
   }
 });
 
-// Make new user
-router.post("/", (req, res) => {
+
+
+
+router.post('/', (req, res) => {
+
   User.create({
     name: req.body.name,
-    password: req.body.password,
+    password: req.body.password
   })
 
-    .then((userData) => {
+    .then(userData => {
       req.session.save(() => {
         req.session.user_id = userData.id;
         req.session.name = userData.name;
@@ -60,10 +62,13 @@ router.post("/", (req, res) => {
         res.json(userData);
       });
     })
-    .catch((err) => {
+    .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
 });
+
+
+
 
 module.exports = router;
