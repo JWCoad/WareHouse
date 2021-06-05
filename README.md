@@ -8,5 +8,3 @@
 // *** Users can add their items into their cart when clicked ***  //
 
 // *** Users can upload their own items for sale *** //
-
-/// *** did i do a thang *** ///
