@@ -24,8 +24,8 @@
 
 ### [NPM Express](https://www.npmjs.com/package/express)
 
-### [Sequelize]
+### [Sequelize](https://sequelize.org/)
 
-### [Routes]
+### [Routes](https://www.npmjs.com/package/routes)
 
-### [Handlebars]
+### [Handlebars](https://handlebarsjs.com/)
