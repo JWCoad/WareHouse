@@ -1086,14 +1086,15 @@ a:hover {
 }
 
 .card {
-  border: 1px solid #1a1a1a;
   margin-bottom: 1rem;
+  box-shadow: 0px 0px 10px #eaeaea;
 }
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: #2d3e50;
+  background-color: var(--tan);
   color: #d9e9e8;
+  box-shadow: 0px 5px 5px #d2d2d2;
 }
 
 .card .card-body {
