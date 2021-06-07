@@ -1,1 +1,14 @@
+<div class="item-search">
+    <h5>Find items</h5>
+    <input type="text" id="itemfilter" onkeyup="myFunction()" placeholder="Search names..">
 
+</div>
+
+
+<article class="items">
+
+    {{#each items as |item|}}
+    {{> item-info item}}
+    {{/each}}
+
+</article>
