@@ -1,13 +1,18 @@
 :root {
     --tan:#c66900; 
     --hover:#b66100;
+    --White:#fff;
+    --lightGrey:#eeeeee;
+    --darkGrey:#333;
+    --Black:#171717;
     --offWhite:#ffffe5;
     --cloud:#e1f5fe;
+    
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #333;
+    color: var(--darkGrey);
     font-weight: 300;
 }
 header {
@@ -71,7 +76,6 @@ nav button:hover {
     list-style: none;
     align-items: center;
 }
-
 .topnav a {
     display: flexbox;
     float: right;
@@ -92,11 +96,67 @@ nav button:hover {
     padding: 20px;
 }
 
-.items {
-    list-style: none;
-    display: inline-flexbox;
+
+.item-search {
+    margin-bottom: 20px;
 }
 
+#itemfilter {
+    padding: 10px 5px;
+    border: solid 1px #ccc;
+}
+
+
+.card .card-header {
+    display: flex;
+    width: 100%;
+}
+
+.item-names {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    margin: 0;
+    font-size: 20px;
+    color: var(--White);
+    font-weight: 300;
+}
+
+.deleteBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-attributes {
+    margin: 0;
+    padding: 0px 0;
+}
+
+.item-attributes ul {
+    margin: 0;
+    padding: 0px;
+}
+
+.item-attributes li {
+    list-style: none;
+    padding: 10px;
+}
+
+
+.item-attributes li:nth-child(even) {
+    background: var(--lightGrey);
+
+}
+
+.item-attributes li a {
+color: var(--darkGrey);
+
+}
+.item-attributes li a:hover {
+
+    
+}
 
 .formwrap {
     max-width: 550px;
