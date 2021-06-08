@@ -10,6 +10,10 @@
 
 // **_ Users can upload their own items for sale _** //
 
+## Design Decissions
+All routes apart form the login and signup are behind an auth wall.
+This was done so only the comapny who owns the items can view their invenotry.
+
 ## Resources used:
 
 ### [Stack Overflow](https://stackoverflow.com/)
