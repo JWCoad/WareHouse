@@ -18,20 +18,22 @@
   <header class="display-flex justify-space-between align-center p-2">
     <div class="logo"><img src="/images/logo.png"></div>
     <nav>
-      <button class="btn" id="add">Add Item</button>
-      <button class="btn" id="logout">Logout</button>
+      <ul>
+        <li><a href="/" class="btn">Home</a></li>
+        <li><a href="/add-item" class="btn" id="addItem">Add Item</a></li>
+        <li> <a class="btn" id="logout">Logout</a></li>
+      </ul>
     </nav>
     {{/if}}
   </header>
   <main class="container container-fluid mt-5">
     {{{ body }}}
   </main>
-
+  {{#if logged_in}}
   <footer>
 
   </footer>
 
-  {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
