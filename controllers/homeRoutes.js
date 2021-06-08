@@ -12,7 +12,7 @@ router.get('/', withAuth, async (req, res) => {
         'name',
         'material',
         'color',
-        'date_created',
+        /*  'date_created', */
         'price',
       ],
       order: [
@@ -39,8 +39,7 @@ router.get('/', withAuth, async (req, res) => {
 
 
 
-/* User login */
-
+/* check user */
 router.get('/', withAuth, async (req, res) => {
   try {
     const userData = await User.findAll({
@@ -59,16 +58,16 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
+/* login page if logged in render home */
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
-
   res.render('login');
 });
 
-
+/* link to signup */
 router.get('/signup', (req, res) => {
   res.render('signup');
 });
@@ -99,5 +98,15 @@ router.get("/category/:id", withAuth, async (req, res) => {
   console.log(plainItems)
   res.render("category-item", { items: plainItems, logged_in: req.session.logged_in })
 })
+
+
+/* link to add-item page */
+router.get('/add-item', (req, res) => {
+  res.render('add-item', {
+    logged_in: req.session.logged_in,
+  });
+})
+
+
 
 module.exports = router;
