@@ -24,15 +24,15 @@ Item.init(
       type: DataTypes.STRING,
     },
 
-    date_created: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
-    },
+    /*     date_created: {
+          type: DataTypes.DATE,
+          allowNull: false,
+          defaultValue: DataTypes.NOW,
+        }, */
 
     price: {
       type: DataTypes.DECIMAL,
-      allowNull: false,
+      /*    allowNull: true, */
     },
 
     user_id: {

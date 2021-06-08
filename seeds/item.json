@@ -4,99 +4,69 @@
         "name": "Logo-print T-shirt",
         "material": "Cotton",
         "color": "White",
-        "date_created": "01/06/2021",
-        "price": "19.99",
-        "user_id": "1",
-        "category_id": "1"
+        "price": "19.99"
     },
     {
         "id": "2",
         "name": "Floral-print silk shirt",
         "material": "Silk",
         "color": "Brown",
-        "date_created": "01/06/2021",
-        "price": "99.99",
-        "user_id": "2",
-        "category_id": "1"
+        "price": "99.99"
     },
     {
         "id": "3",
         "name": "Jeans",
         "material": "Denim",
         "color": "Blue",
-        "date_created": "02/06/2021",
-        "price": "59.99",
-        "user_id": "3",
-        "category_id": "1"
+        "price": "59.99"
     },
     {
         "id": "4",
         "name": "leggings",
         "material": "Leather",
         "color": "Black",
-        "date_created": "02/06/2021",
-        "price": "89.99",
-        "user_id": "4",
-        "category_id": "1"
+        "price": "89.99"
     },
     {
         "id": "5",
         "name": "Chelsea boots",
         "material": "Leather",
         "color": "Yellow",
-        "date_created": "03/06/2021",
-        "price": "119.99",
-        "user_id": "1",
-        "category_id": "1"
+        "price": "119.99"
     },
     {
         "id": "6",
         "name": "Sandals",
         "material": "Leather",
         "color": "Yellow",
-        "date_created": "03/06/2021",
-        "price": "69.99",
-        "user_id": "2",
-        "category_id": "1"
+        "price": "69.99"
     },
     {
         "id": "7",
         "name": "Sleeved dress",
         "material": "Leather",
         "color": "Yellow",
-        "date_created": "03/06/2021",
-        "price": "69.99",
-        "user_id": "3",
-        "category_id": "1"
+        "price": "69.99"
     },
     {
         "id": "8",
         "name": "Midi dress",
         "material": "Wool",
         "color": "Black",
-        "date_created": "03/06/2021",
-        "price": "89.99",
-        "user_id": "4",
-        "category_id": "1"
+        "price": "89.99"
     },
     {
         "id": "9",
         "name": "Blazer",
         "material": "Polyster",
         "color": "White",
-        "date_created": "04/06/2021",
-        "price": "129.99",
-        "user_id": "1",
-        "category_id": "1"
+        "price": "129.99"
     },
     {
         "id": "10",
         "name": "Denim Jacket",
         "material": "Denim",
         "color": "Blue",
-        "date_created": "04/06/2021",
-        "price": "99.99",
-        "user_id": "2",
-        "category_id": "1"
+        "price": "99.99"
     }
 ]
