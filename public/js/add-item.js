@@ -1,29 +1,32 @@
-const newItemHandler = async (event) => {
+async function newFormHandler(event) {
     event.preventDefault();
-  
-    const item_name = document.querySelector('input[name="item-name]').value;
-    const item_category = document.querySelector('input[name="item-category"]').value;
-    const item_color = document.querySelector('input[name="item-color"]').value;
-    const item_material = document.querySelector('input[name="item-material"]').value;
-    const item_price = document.querySelector('input[name="item-price"]').value;
 
-    if (item_name && item_category && item_color && item_material && item_price) {
-      const response = await fetch(`/api/items`, {
+    const name = document.querySelector('input[name="item-name"]').value;
+    const material = document.querySelector('input[name="material"]').value;
+    const color = document.querySelector('input[name="color"]').value;
+    const price = document.querySelector('input[name="price"]').value;
+
+
+    const response = await fetch(`/api/items`, {
         method: 'POST',
-        body: JSON.stringify({item_name, item_category, item_color, item_material, item_price}),
+        body: JSON.stringify({
+            name,
+            material,
+            color,
+            price
+        }),
         headers: {
-          'Content-Type': 'application/json',
+            'Content-Type': 'application/json'
         }
-      });
-    
-      if (response.ok) {
-        document.location.replace('/');
-      } else {
-        alert('Failed to create item');
-      }
-    }
-  };
+    });
 
-   
-  
-  document.querySelector('.new-post-form').addEventListener('submit', newItemHandler);
+    if (response.ok) {
+        alert('Success! your item was added.');
+        document.location.replace('/add-item');
+    } else {
+        alert(response.statusText);
+    }
+};
+
+document.querySelector('#new-item-form').addEventListener('submit', newFormHandler);
+
