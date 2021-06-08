@@ -1,58 +1,36 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
-  </div>
-</div>
+<div class="card">
+    <h3 class="card-header item-names">Add Item</h3>
+    <form class="card-body new-item-form" id="new-item-form">
 
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Create a New Item:</h3>
+        <div class="itemFieldsWrap">
+            <div class="itemFields">
+                <label for="item-name" class="form-label">Item Name:</label>
+                <input type="text" id="item-name" name="item-name" class="form-input" required="required">
+            </div>
 
-    <form class="form new-item-form">
-      <div class="form-group">
-        <label for="item-name">Item name:</label>
-        <input class="form-input" type="text" id="item-name" name="item-name" />
-      </div>
-      <div class="form-group">
-        <label for="item-category">Item category: </label>
-        <input class="form-input" type="number" id="item-category" name="item-category" />
-      </div>
-      <div class="form-group">
-        <label for="item-category">Item material: </label>
-        <input class="form-input" type="number" id="item-category" name="item-category" />
-      </div>
-      <div class="form-group">
-        <label for="item_color">Item color:</label>
-        <input class="form-input" type="number" id="item-color" name="item-color" />
-      </div>
-         <div class="form-group">
-        <label for="item-price">Item price $: </label>
-        <input class="form-input" type="number" id="item-price" name="item-price" />
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
+            <div class="itemFields">
+                <label class="form-label" for="material">Material:</label>
+                <input id="material" name="material" class="form-input" required="required">
+            </div>
+
+            <div class="itemFields">
+                <label class="form-label" for="color">Colour:</label>
+                <input id="color" name="color" class="form-input" required="required">
+            </div>
+
+
+            <div class="itemFields">
+                <label class="form-label" for="price">Price:</label>
+                <input id="price" name="price" class="form-input" required="required">
+            </div>
+
+        </div>
+
+        <div class="itemSubmit">
+            <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+
     </form>
-  </div>
-
-  {{#if items.length}}
-  <div class="col-md-6 project-list">
-    <h3>Current Items:</h3>
-
-    {{#each items as |item|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/items/{{item.id}}">{{item.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{item.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}}
 </div>
-
-{{!-- <script src="./js/profile.js"></script> --}}
 
 <script src="/js/add-item.js"></script>
