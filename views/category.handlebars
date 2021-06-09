@@ -1,3 +1,10 @@
-{{#each categories as |category|}}
-<a href="/category/{{category.category_id}}"><img src="{{category.imagePath}}" alt="{{category.name}}" /></a>
-{{/each}}
+<div class="flexWrap">
+    {{#each categories as |category|}}
+
+    <div class="catIcons">
+        <a href="/category/{{category.category_id}}">
+            <img src="{{category.imagePath}}" alt="{{category.name}}" /></a>
+    </div>
+
+    {{/each}}
+</div>

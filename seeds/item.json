@@ -4,69 +4,79 @@
         "name": "Logo-print T-shirt",
         "material": "Cotton",
         "color": "White",
-        "price": "19.99"
+        "price": "19.99",
+        "category_id": "1"
     },
     {
         "id": "2",
         "name": "Floral-print silk shirt",
         "material": "Silk",
         "color": "Brown",
-        "price": "99.99"
+        "price": "99.99",
+        "category_id": "1"
     },
     {
         "id": "3",
         "name": "Jeans",
         "material": "Denim",
         "color": "Blue",
-        "price": "59.99"
+        "price": "59.99",
+        "category_id": "2"
     },
     {
         "id": "4",
         "name": "leggings",
         "material": "Leather",
         "color": "Black",
-        "price": "89.99"
+        "price": "89.99",
+        "category_id": "2"
     },
     {
         "id": "5",
         "name": "Chelsea boots",
         "material": "Leather",
         "color": "Yellow",
-        "price": "119.99"
+        "price": "119.99",
+        "category_id": "3"
     },
     {
         "id": "6",
         "name": "Sandals",
         "material": "Leather",
         "color": "Yellow",
-        "price": "69.99"
+        "price": "69.99",
+        "category_id": "3"
     },
     {
         "id": "7",
         "name": "Sleeved dress",
         "material": "Leather",
         "color": "Yellow",
-        "price": "69.99"
+        "price": "69.99",
+        "category_id": "4"
     },
     {
         "id": "8",
         "name": "Midi dress",
         "material": "Wool",
         "color": "Black",
-        "price": "89.99"
+        "price": "89.99",
+        "category_id": "4"
     },
     {
         "id": "9",
         "name": "Blazer",
         "material": "Polyster",
         "color": "White",
-        "price": "129.99"
+        "price": "129.99",
+        "category_id": "5"
     },
     {
         "id": "10",
         "name": "Denim Jacket",
         "material": "Denim",
         "color": "Blue",
-        "price": "99.99"
+        "price": "99.99",
+        "category_id": "5"
     }
 ]
