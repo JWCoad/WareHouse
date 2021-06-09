@@ -24,15 +24,8 @@ Item.init(
       type: DataTypes.STRING,
     },
 
-    /*     date_created: {
-          type: DataTypes.DATE,
-          allowNull: false,
-          defaultValue: DataTypes.NOW,
-        }, */
-
     price: {
       type: DataTypes.DECIMAL,
-      /*    allowNull: true, */
     },
 
     user_id: {
@@ -42,10 +35,13 @@ Item.init(
         key: 'id',
       },
     },
-    category_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    }
+
+    /* --- this breaks add items
+       category_id: {
+          type: DataTypes.INTEGER,
+          allowNull: false
+        } 
+        */
   },
   {
     sequelize,
