@@ -74,6 +74,15 @@ nav li .btn {
     padding: 10px;
 }
 
+
+.container {
+    display: block;
+    margin: 0px auto;
+    padding: 160px 20px 20px;
+}
+
+
+/* login form styles */
 .formwrap {
     max-width: 550px;
     margin: 0px auto;
@@ -105,7 +114,6 @@ nav li .btn {
 }
 
 /* add-item form styles */
-
 .itemFieldsWrap {
     display: flex;
 }
@@ -133,35 +141,25 @@ nav li .btn {
     margin: 10px 0;
 }
 
+/* Category Styles */
 
-
-.search {
-    display: flexbox;
-    display: list-item;
-    list-style: none;
-    align-items: center;
+.flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.catIcons {
+    flex: 0 0 50%;
+    display: flex;
+    max-width: 300px;
 }
 
-.topnav a {
-    display: flexbox;
-    float: right;
-    color: #e1f5fe;
-    text-align: center;
-    padding: 14px 12px;
-    display: block;
+.catIcons img {
+    width: 100%;
 }
 
-.topnav a:hover {
-    color: black;
-    background-color: var(--cloud);
-}
 
-.container {
-    display: block;
-    margin: 0px auto;
-    padding: 160px 20px 20px;
-}
-
+/* items home styles */
 .item-search {
     margin-bottom: 20px;
 }
