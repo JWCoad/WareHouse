@@ -6,8 +6,9 @@
     </div>
     <div class="container" id="category-path">
         {{#each categories as |category|}}
-        <a href="/category/{{category.category_id}}"><img class="image" src="{{category.imagePath}}" alt="{{category.name}}" /></a>
-        <h4 class="category-name">{{category.name}}</h4>
+            
+            <a href="/category/{{category.category_id}}"><img class="image" src="{{category.imagePath}} " alt="{{category.name}}" /></a>
+            <h4 class="category-name">{{category.name}}</h4>
         {{/each}}
     </div>
 </div>
