@@ -8,7 +8,7 @@ async function selectCategoryHandler(event) {
         const response = await fetch('/api/items', {
             method: 'POST',
             body: JSON.stringify({
-               category_id
+                category_id
             }),
             headers: { 'Content-Type': 'application/json' }
         });

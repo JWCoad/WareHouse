@@ -1,10 +1,18 @@
-{{#each items as |item|}}
-<div>
-    <p>{{item.name}}</p>
-    <p>{{item.material}}</p>
-    <p>{{item.color}}</p>
-    <p>{{item.price}}</p>
+
+
+<div id="itemUL" class="card">
+    {{#each items as |item|}}
+       <div class="card-header">
+            <h4 class="item-names">{{item.name}}</h4>
+       </div>
+
+       <div class="item-attributes">
+           <ul>
+               <li>Material: {{item.material}}</li>
+               <li>Color: {{item.color}}</li>
+               <li>Price: ${{item.price}}</li>
+           </ul>
+        </div>
+    {{/each}}
 </div>
-<hr />
-{{/each}}
-<a href="/category" class="btn btn-primary">Back</a>
+

@@ -235,4 +235,36 @@ color: var(--darkGrey);
         margin-right: 0px;
         max-width: 100%;
     }
+
+    #category-path {
+        display: block;
+    }
+}
+
+
+/* category page */
+.image {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+
+}
+
+.category-name {
+    /* text-align: center; */
+    margin-left: 110px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    position: relative;
+   
+    padding: 10px; 
+
+}
+
+.category-name:hover {
+   color: #c66900
+}
+
+#category-path {
+    padding-top: 80px;
 }
