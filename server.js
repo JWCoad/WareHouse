@@ -6,6 +6,9 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const routes = require("./controllers");
 const helpers = require("./utils/helpers");
+const morgan = require("morgan");
+const rt = require("file-stream-rotator");
+const fs = require("fs");
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
@@ -24,6 +27,16 @@ const sess = {
     db: sequelize,
   }),
 };
+
+// Logs access to console log
+app.use(morgan("combined"));
+
+// creates a log file
+var accessLogStream = fs.createWriteStream(path.join(__dirname, "access.log"), {
+  flags: "a",
+});
+// writes to the log file
+app.use(morgan("combined", { stream: accessLogStream }));
 
 app.use(session(sess));
 // Inform express which template to use
