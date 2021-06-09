@@ -1,26 +1,16 @@
 
 /* this is the search filter  */
+/* "gi" is for global and case insensitive for the text input */
+function searchFunction() {
 
-function myFunction() {
+    var matcher = new RegExp(document.getElementById("itemfilter").value, "gi");
+    for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
 
-    // Declare variables
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('itemfilter');
-    filter = input.value.toUpperCase();
-
-    ul = document.getElementById("itemUL");
-    li = ul.getElementsByTagName('li');
-
-    // Loop through items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+        if (matcher.test(document.getElementsByClassName("item-names")[i].innerHTML)) {
+            document.getElementsByClassName("card")[i].style.display = "inline-block";
         }
         else {
-            li[i].style.display = "none";
+            document.getElementsByClassName("card")[i].style.display = "none";
         }
     }
 }
