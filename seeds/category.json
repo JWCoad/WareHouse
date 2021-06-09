@@ -1,27 +1,27 @@
 [
     {
         "category_id": "1",
-        "name": "tops" 
+        "name": "Top" 
     },
 
     {
         "category_id": "2",
-        "name": "pants"
+        "name": "Pants"
     },
 
     {
         "category_id": "3",
-        "name": "shoes"
+        "name": "Shoes"
     },
 
     {
         "category_id": "4",
-        "name": "dresses"
+        "name": "Dress"
     },
 
     {
         "category_id": "5",
-        "name": "jackets"
+        "name": "Jacket"
     }
 ]
 

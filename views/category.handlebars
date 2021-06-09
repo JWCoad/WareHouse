@@ -1,3 +1,15 @@
-{{#each categories as |category|}}
-<a href="/category/{{category.category_id}}"><img src="{{category.imagePath}}" alt="{{category.name}}" /></a>
-{{/each}}
+
+<div id="itemUL" class="card">
+    <div class="card-header">
+            <h3 class="item-names">Cateogry</h3>
+    </div>
+    <div class="container" id="category-path">
+        {{#each categories as |category|}}
+        <a href="/category/{{category.category_id}}"><img class="image" src="{{category.imagePath}}" alt="{{category.name}}" /></a>
+        <h4 class="category-name">{{category.name}}</h4>
+        {{/each}}
+    </div>
+</div>
+
+
+
