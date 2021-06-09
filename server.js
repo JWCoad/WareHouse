@@ -28,7 +28,7 @@ const sess = {
   }),
 };
 
-// Logs access to concole log
+// Logs access to console log
 app.use(morgan("combined"));
 
 // creates a log file
