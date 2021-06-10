@@ -1,9 +1,10 @@
 
 /* this is the search filter  */
-/* "gi" is for global and case insensitive for the text input */
+/* regular expression (RegExp) for text input matching. "gi" is for global case insensitive*/
+/* the .test is matching item-names with itemfilter */
 function searchFunction() {
 
-    var matcher = new RegExp(document.getElementById("itemfilter").value, "gi");
+    const matcher = new RegExp(document.getElementById("itemfilter").value, "gi");
     for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
 
         if (matcher.test(document.getElementsByClassName("item-names")[i].innerHTML)) {
