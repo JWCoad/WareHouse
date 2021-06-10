@@ -1,17 +1,16 @@
 <div class="card" style="visibility: visible; display: block;">
 
     <div class="card-header">
-        <h4 class="item-names">{{name}}</h4>
-        <button id="deleteButton" class="deleteBtn">X</button>
+        <h4 class="item-names"><a class="itemLink" href="/api/item/{{id}}">{{name}}</a></h4>
     </div>
 
     <div class="item-attributes">
         <ul>
-            <li>Material: <a href="#">{{material}}</a></li>
-            <li>Color: <a href="#">{{color}}</a></li>
-            <li>Price: <a href="#">${{price}}</a></li>
-            <li>Item_ID: <a href="#">{{id}}</a></li>
+            <li>Material: {{material}}</li>
+            <li>Color: {{color}}</li>
+            <li>Price: ${{price}}</li>
+            <li>Item_ID: {{id}}</li>
         </ul>
+
     </div>
-    
 </div>

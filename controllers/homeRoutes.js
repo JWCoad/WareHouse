@@ -12,7 +12,6 @@ router.get('/', withAuth, async (req, res) => {
         'name',
         'material',
         'color',
-        /*  'date_created', */
         'price',
       ],
       order: [
@@ -34,6 +33,17 @@ router.get('/', withAuth, async (req, res) => {
 
 
 
+/* get item by id */
+router.get("/api/item/:id", withAuth, async (req, res) => {
+  const items = await Item.findAll({
+    where: {
+      id: req.params.id
+    },
+  })
+  const plainItems = items.map((item) => item.get({ plain: true }))
+  console.log(plainItems)
+  res.render("item-page", { items: plainItems, logged_in: req.session.logged_in })
+})
 
 
 
@@ -73,11 +83,11 @@ router.get('/signup', (req, res) => {
 });
 
 const categoryImageMap = {
-  Dress: "./images/Dress.jpeg",
-  Jacket: "./images/Jacket.png",
-  Pants: "./images/Pants.png",
-  Shoes: "./images/Shoes.png",
-  Top: "./images/Top.jpeg"
+  dresses: "./images/dresses.png",
+  jackets: "./images/jackets.png",
+  pants: "./images/pants.png",
+  shoes: "./images/shoes.jpeg",
+  tops: "./images/tops.jpeg"
 
 }
 
@@ -106,6 +116,7 @@ router.get('/add-item', (req, res) => {
     logged_in: req.session.logged_in,
   });
 })
+
 
 
 

@@ -25,8 +25,6 @@ router.get('/', (req, res) => {
 });
 
 
-
-
 /* get by id */
 router.get('/:id', (req, res) => {
     Item.findOne({
@@ -39,7 +37,6 @@ router.get('/:id', (req, res) => {
             'color',
             'price',
         ],
-
 
     })
         .then(dbItemData => {
@@ -54,14 +51,6 @@ router.get('/:id', (req, res) => {
             res.status(500).json(err);
         });
 });
-
-
-
-/* delete items */
-
-
-
-
 
 
 
@@ -88,6 +77,27 @@ router.post('/', (req, res) => {
         })
 
     res.redirect('/');
+});
+
+
+
+/* delete items */
+router.delete('/:id', (req, res) => {
+    Item.destroy({
+        where: {
+            id: req.params.id
+        },
+
+    }).then(dbItemData => {
+        if (!dbItemData) {
+            res.status(404).json({ message: 'No post found with this id' });
+            return;
+        }
+        res.json(dbItemData);
+    }).catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 });
 
 

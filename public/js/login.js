@@ -14,9 +14,17 @@ const loginFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/');
     } else {
-      alert('Failed to log in');
+      Swal.fire({
+        title: "Failed to login!",
+        icon: "error",
+        text: "Your password or username is incorrect",
+        confirmButtonText: "Ok",
+        confirmButtonColor: "#f6645b",
+      });
     }
+
   }
+
 };
 
 document
