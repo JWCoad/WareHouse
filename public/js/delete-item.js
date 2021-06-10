@@ -1,18 +1,10 @@
 async function deleteItemHandler(event) {
     event.preventDefault();
 
-    const id = window.location.toString().split('/')
-    [window.location.toString().split('/').length - 1];
-
     const response = await fetch(`/api/item/${id}`, {
         method: 'DELETE',
-        body: JSON.stringify({
-            id: id
-        }),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    });
+        headers: { 'Content-type': 'application/json' },
+    })
 
     if (response.ok) {
         document.location.replace('/');
@@ -22,6 +14,4 @@ async function deleteItemHandler(event) {
 
 }
 
-document.querySelector('#deleteButton').addEventListener('click', deleteItemHandler);
-
-
+document.querySelector('#deleteButton').addEventListener('submit', deleteItemHandler);
