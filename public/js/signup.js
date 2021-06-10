@@ -14,12 +14,21 @@ async function signupFormHandler(event) {
             headers: { 'Content-Type': 'application/json' }
         });
         if (response.ok) {
-            console.log('success');
-
-            document.location.replace('/login');
+            Swal.fire({
+                title: "New user created!",
+                icon: "success",
+                confirmButtonText: "Ok",
+                confirmButtonColor: "#1bbc9b",
+            });
 
         } else {
-            alert('Failed to signup!');
+            Swal.fire({
+                title: "Failed to signup!",
+                icon: "error",
+                text: "Your password needs to be 8 characters or more",
+                confirmButtonText: "Ok",
+                confirmButtonColor: "#f6645b",
+            });
         }
     }
 }
