@@ -1,18 +1,46 @@
 # WareHouse
 
-**_ A website that stores, sells and trades all kinds of clothings and has catergorised it acoordingly _**///
+### User story
 
-// **_ Users will be able to sign up/in to their accounts _**
+## AS an employee I want to be able to view, edit, and delete stock
 
-// **_ Users will be able to search through all the clothing avaiable in wareHouse _**
+## WHEN I want to see if an item is in stock
 
-// **_ Users can add their items into their cart when clicked _** //
+## Then I can search for it
 
-// **_ Users can upload their own items for sale _** //
+## WHEN I want to see details on an item
+
+## THEN I can see color, fabric and price
+
+## WHEN an item leaves the store
+
+## THEN I can update the database
+
+## WHEN an item arrives in the store
+
+## THEN I can add it to the database
 
 ## Design Decissions
+
 All routes apart form the login and signup are behind an auth wall.
 This was done so only the comapny who owns the items can view their invenotry.
+
+## Installation Instructions
+
+To install run "npm i"
+then "node server.js"
+
+## [Repository](https://github.com/GreenTeamm/WareHouse)
+
+## Screenshots of Deployed Application
+
+### ![Screenshot](public/assets/screenshot1.png)
+
+### ![Screenshot](public/assets/screenshot2.png)
+
+### ![Screenshot](public/assets/screenshot3.png)
+
+### ![Screenshot](public/assets/screenshot4.png)
 
 ## Resources used:
 
@@ -33,3 +61,7 @@ This was done so only the comapny who owns the items can view their invenotry.
 ### [Routes](https://www.npmjs.com/package/routes)
 
 ### [Handlebars](https://handlebarsjs.com/)
+
+### [Morgan](https://www.npmjs.com/package/morgan)
+
+### [MySQL](https://www.mysql.com/)
