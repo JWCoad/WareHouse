@@ -2,23 +2,19 @@
 
 ### User story
 
-## AS an employee I want to be able to view, edit, and delete stock
+AS an employee I want to be able to view, edit, and delete stock
 
-# WHEN I want to see if an item is in stock
+WHEN I want to see if an item is in stock
+Then I can search for it
 
-# Then I can search for it
+WHEN I want to see details on an item
+THEN I can see color, fabric and price
 
-# WHEN I want to see details on an item
+WHEN an item leaves the store
+THEN I can update the database
 
-# THEN I can see color, fabric and price
-
-# WHEN an item leaves the store
-
-# THEN I can update the database
-
-# WHEN an item arrives in the store
-
-# THEN I can add it to the database
+WHEN an item arrives in the store
+THEN I can add it to the database
 
 ## Design Decissions
 
