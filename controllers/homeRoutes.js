@@ -2,10 +2,11 @@ const router = require('express').Router();
 const { User, Item, Category } = require('../models');
 const withAuth = require('../utils/auth');
 
-
+console.log('1')
 /* Get Items */
 router.get('/', withAuth, async (req, res) => {
   try {
+    console.log('2')
 
     const dbItemData = await Item.findAll({
       attributes: ['id',
@@ -19,10 +20,11 @@ router.get('/', withAuth, async (req, res) => {
       ],
 
     });
-
+    console.log('3')
     const items = dbItemData.map(item => item.get({ plain: true }));
-
+    console.log('4')
     res.render('homepage', {
+
       items,
       logged_in: req.session.logged_in,
     });
@@ -84,9 +86,9 @@ router.get('/signup', (req, res) => {
 
 const categoryImageMap = {
   dresses: "./images/dresses.png",
-  jackets: "./images/Jacket.png",
+  jackets: "./images/jackets.png",
   pants: "./images/pants.png",
-  shoes: "./images/shoes.png",
+  shoes: "./images/shoes.jpeg",
   tops: "./images/tops.jpeg"
 
 }
