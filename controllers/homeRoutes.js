@@ -85,11 +85,11 @@ router.get('/signup', (req, res) => {
 });
 
 const categoryImageMap = {
-  dresses: "./images/dresses.png",
-  jackets: "./images/jackets.png",
-  pants: "./images/pants.png",
-  shoes: "./images/shoes.jpeg",
-  tops: "./images/tops.jpeg"
+  Dress: "./images/Dress.jpeg",
+  Jacket: "./images/Jacket.png",
+  Pants: "./images/pants.png",
+  Shoes: "./images/Shoes.png",
+  Top: "./images/Top.jpeg"
 
 }
 

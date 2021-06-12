@@ -429,5 +429,38 @@ color: var(--darkGrey);
     .catIcons {
         flex: 0 0 35%;
 
+    
     }
+  }
+
+    /* category page */
+.image {
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+
+.category-name {
+    text-align: center; 
+    margin-bottom: 30px;
+    padding: 10px; 
+
+}
+
+.category-name:hover {
+   color: #c66900
+}
+
+#category-path {
+    flex: 1; 
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: column;
 }
